@@ -1,5 +1,6 @@
 // ==UserScript==
-// @name         Zendesk Chat Modern Layout with Night Mode
+// @name         Zendesk Chat Modern Layout with Night Mode and Custom Theme
+// @updateURL    
 // @namespace    http://tampermonkey.net/
 // @version      1.0
 // @description  Improve Zendesk chat layout and add night mode
