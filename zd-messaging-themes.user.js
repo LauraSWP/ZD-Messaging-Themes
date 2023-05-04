@@ -1644,15 +1644,7 @@ $('#reset-button').on('click', function() {
     $('#text-color').val('#78a300');
     $('#secondary-bg-color').val('#78a300');
     $('#chat-bg-color').val('#78a300');
-
-    themes.custom = {
-        primaryColor: '#78a300',
-        secondaryColor: '#78a300',
-        extraColor: '#78a300',
-        textColor: '#78a300',
-        chatBackgroundColor: '#78a300',
-        secondaryBackgroundColor: '#78a300',
-    };
+)};
 
 // === Save settings when changes are made ====================================
 $('#chat-bg-color').on('input', function() {
