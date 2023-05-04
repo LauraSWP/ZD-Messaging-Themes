@@ -1644,7 +1644,7 @@ $('#reset-button').on('click', function() {
     $('#text-color').val('#78a300');
     $('#secondary-bg-color').val('#78a300');
     $('#chat-bg-color').val('#78a300');
-)};
+});
 
 // === Save settings when changes are made ====================================
 $('#chat-bg-color').on('input', function() {
@@ -1789,5 +1789,4 @@ updateCustomThemeColors();
   );
     setThemeFromLocalStorage();
 });
-});
-});
+    });
