@@ -1,10 +1,11 @@
 // ==UserScript==
 // @name         Zendesk Chat Modern Layout with Night Mode and Custom Theme
-// @updateURL    
+// @updateURL    https://github.com/LauraSWP/ZD-Messaging-Themes/blob/main/zd-messaging-themes.user.js
+// @downloadURL  https://github.com/LauraSWP/ZD-Messaging-Themes/blob/main/zd-messaging-themes.user.js
 // @namespace    http://tampermonkey.net/
 // @version      1.0
 // @description  Improve Zendesk chat layout and add night mode
-// @author       Your Name
+// @author       Laura Solanes (LauraSWP)
 // @match        https://*.zendesk.com/*
 // @grant        GM_addStyle
 // @require      https://code.jquery.com/jquery-3.6.0.min.js
