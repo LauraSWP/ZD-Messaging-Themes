@@ -3,7 +3,7 @@
 // @updateURL    https://github.com/LauraSWP/ZD-Messaging-Themes/raw/main/zd-messaging-themes.user.js
 // @downloadURL  https://github.com/LauraSWP/ZD-Messaging-Themes/raw/main/zd-messaging-themes.user.js
 // @namespace    http://tampermonkey.net/
-// @version      2.0
+// @version      2.1
 // @description  Improve Zendesk chat layout and add night mode
 // @author       Laura Solanes (LauraSWP)
 // @match        https://*.zendesk.com/*
@@ -455,7 +455,7 @@ cursor: pointer;
 .default-theme .settings-menu {
     border: 1px solid rgb(216, 220, 222);
     border-radius: 4px;
-    padding: 10px;
+    padding: 50px;
     background-color: white;
     color: rgb(47, 57, 65);
     font-family: inherit;
@@ -467,10 +467,12 @@ cursor: pointer;
     width: 40%;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
     z-index: 9999;
-    display: grid;
+    display: flow-root;
     margin: 0 auto;
     right: 0;
     top: 30%;
+    font-size: 16px;
+    line-height: 3;
   }
 .default-theme .lzuyri-0.coYhhN {
 background: white !important;
@@ -891,7 +893,7 @@ $('#dark-theme-styles').html(`
   .dark-theme .settings-menu {
     border: 1px solid rgb(216, 220, 222);
     border-radius: 4px;
-    padding: 10px;
+    padding: 50px;
     background-color: white;
     color: rgb(47, 57, 65);
     font-family: inherit;
@@ -903,10 +905,12 @@ $('#dark-theme-styles').html(`
     width: 40%;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
     z-index: 9999;
-    display: grid;
+    display: flow-root;
     margin: 0 auto;
     right: 0;
     top: 30%;
+    font-size: 16px;
+    line-height: 3;
   }
   .dark-theme .lzuyri-0.coYhhN {
     background: white !important;
@@ -1550,7 +1554,7 @@ function updateCustomThemeCSS() {
       .settings-menu {
         border: 1px solid rgb(216, 220, 222);
         border-radius: 4px;
-        padding: 10px;
+        padding: 50px;
         background-color: white;
         color: rgb(47, 57, 65);
         font-family: inherit;
@@ -1562,10 +1566,12 @@ function updateCustomThemeCSS() {
         width: 40%;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
         z-index: 9999;
-        display: grid;
+        display: flow-root;
         margin: 0 auto;
         right: 0;
         top: 30%;
+        font-size: 16px;
+        line-height: 3;
       }
       .lzuyri-0.coYhhN {
         background: white !important;
