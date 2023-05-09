@@ -453,27 +453,23 @@ border: none;
 cursor: pointer;
 }
 .default-theme .settings-menu {
-    border: 1px solid rgb(216, 220, 222);
-    border-radius: 4px;
-    padding: 50px;
-    background-color: white;
-    color: rgb(47, 57, 65);
-    font-family: inherit;
-    font-size: 14px;
-    line-height: 1.28571;
-    box-sizing: border-box;
-    position: relative;
-    left: 0;
-    width: 40%;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
-    z-index: 9999;
-    display: flow-root;
-    margin: 0 auto;
-    right: 0;
-    top: 30%;
-    font-size: 16px;
-    line-height: 3;
-  }
+  border: 1px solid rgb(216, 220, 222);
+  padding: 50px;
+  color: rgb(47, 57, 65);
+  box-sizing: border-box;
+  position: relative;
+  left: 0;
+  width: 70%;
+  z-index: 9999;
+  margin: 0 auto;
+  right: 0;
+  top: 555px;
+  font-size: 16px;
+  background-color: white;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.05), 0 5px 15px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+}
 .default-theme .lzuyri-0.coYhhN {
 background: white !important;
 }
@@ -487,6 +483,226 @@ width: 30%;
 text-transform: uppercase;
 font-size: 10px;
 margin-top: -10px;
+}
+.default-theme .color-settings {
+  width: 170px;
+  float: left;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.05), 0 5px 15px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+  height: 90px;
+  padding-left: 20px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  padding-right: 20px;
+}
+.default-theme #primary-color-code, #secondary-color-code, #extra-color-code, #secondary-color-code, #user-bubble-bg-color-code, #secondary-bg-color-code, #chat-bg-color-code, #text-color-code, #sidebar-bg-color-code, #dropdown-bg-color-code, #label-color-code, #user-bubble-text-color-code {
+  border: 1px solid #f2f2f2;
+  background: #f2f2f2;
+  border-radius: 5px;
+  width: 100px;
+  margin-bottom: 2px;
+  margin-top: 5px;
+  float: left;
+  margin-right: 10px;
+}
+.default-theme input[type="color"] {
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.default-theme input[type="color"]:focus {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.default-theme input[type="color"] {
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+  }
+ .default-theme input[type="color"] {
+      -webkit-appearance: none;
+      border: none;
+      width: 32px;
+      height: 32px;
+      background: transparent;
+      padding: 0;
+      margin: 0;
+      cursor: pointer;
+      border-radius: 50px;
+    }
+  .default-theme input[type="color"]::-webkit-color-swatch-wrapper {
+      padding: 0;
+      border:none;
+      border-radius: 50px;
+  }
+  .default-theme input[type="color"]::-webkit-color-swatch {
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0px 1px 5px 1px #eee;
+  }
+  .default-theme input[type="color"]::-moz-color-swatch {
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0px 1px 5px 1px #eee;
+    }
+   .default-theme .color-settings label {
+  border-bottom: 1px solid #f7f7f7;
+  margin-bottom: 10px;
+  width: 100%;
+  padding-bottom: 5px;
+}
+.default-theme #save-button {
+  background: #79c844;
+  padding: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+  border-radius: 20px;
+  color: white;
+  display: block;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.default-theme #reset-button {
+  background: #595959;
+  padding: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+  border-radius: 20px;
+  color: white;
+  display: block;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.default-theme .toggle-button-cover {
+  display: grid;
+  position: relative;
+  width: 400px;
+  height: 100px;
+  box-sizing: border-box;
+  border-top: 1px solid #fafafa;
+}
+
+.default-theme .button-cover {
+  height: 60px;
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  width: 200px;
+}
+
+.default-theme .button-cover:before
+{
+    counter-increment: button-counter;
+    content: counter(button-counter);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #d7e3e3;
+    font-size: 12px;
+    line-height: 1;
+    padding: 5px;
+}
+
+.default-theme .button-cover, .knobs, .layer
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.default-theme .button {
+  position: relative;
+  top: -7px;
+  width: 74px;
+  height: 36px;
+  margin: -20px auto 0 auto;
+  overflow: hidden;
+  left: 110px;
+}
+
+.default-theme .button.r, .button.r .layer
+{
+    border-radius: 100px;
+}
+.default-theme #button-3 .checkbox {
+  position: relative;
+  width: 100% !important;
+  height: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  opacity: 0 !important;
+  cursor: pointer !important;
+  z-index: 3;
+}
+.default-theme .knobs
+{
+    z-index: 2;
+}
+
+.default-theme .layer {
+  width: 100%;
+  background-color: #f2f2f2;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+/* Button 3 */
+.default-theme #button-3 .knobs::before {
+  content: 'NO';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 20px;
+  height: 10px;
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+  padding: 9px 4px;
+  background-color: #595959;
+  border-radius: 50%;
+  transition: 0.3s ease all, left 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15);
+}
+
+.default-theme #button-3 .checkbox:active + .knobs:before
+{
+    width: 46px;
+    border-radius: 100px;
+}
+
+.default-theme #button-3 .checkbox:checked:active + .knobs:before
+{
+    margin-left: -26px;
+}
+
+.default-theme #button-3 .checkbox:checked + .knobs::before {
+  content: 'YES';
+  left: 42px;
+  background-color: #79C844;
+}
+
+.default-theme #button-3 .checkbox:checked ~ .layer {
+  background-color: #edfceb;
+}
+.default-theme h3 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f9f9f9;
+  margin-bottom: 20px;
 }
 `);
 
@@ -891,33 +1107,249 @@ $('#dark-theme-styles').html(`
       cursor: pointer;
   }
   .dark-theme .settings-menu {
-    border: 1px solid rgb(216, 220, 222);
-    border-radius: 4px;
-    padding: 50px;
-    background-color: white;
-    color: rgb(47, 57, 65);
-    font-family: inherit;
-    font-size: 14px;
-    line-height: 1.28571;
-    box-sizing: border-box;
-    position: relative;
-    left: 0;
-    width: 40%;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
-    z-index: 9999;
-    display: flow-root;
-    margin: 0 auto;
-    right: 0;
-    top: 30%;
-    font-size: 16px;
-    line-height: 3;
-  }
+  border: 1px solid rgb(216, 220, 222);
+  padding: 50px;
+  color: rgb(47, 57, 65);
+  box-sizing: border-box;
+  position: relative;
+  left: 0;
+  width: 70%;
+  z-index: 9999;
+  margin: 0 auto;
+  right: 0;
+  top: 555px;
+  font-size: 16px;
+  background-color: white;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.05), 0 5px 15px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+}
   .dark-theme .lzuyri-0.coYhhN {
     background: white !important;
   }
   .dark-theme .sc-1bfb6j4-0.jIQIHh {
     width: 200px;
   }
+  .dark-theme .color-settings {
+  width: 170px;
+  float: left;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.05), 0 5px 15px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+  height: 90px;
+  padding-left: 20px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  padding-right: 20px;
+}
+.dark-theme #primary-color-code, #secondary-color-code, #extra-color-code, #secondary-color-code, #user-bubble-bg-color-code, #secondary-bg-color-code, #chat-bg-color-code, #text-color-code, #sidebar-bg-color-code, #dropdown-bg-color-code, #label-color-code {
+  border: 1px solid #f2f2f2;
+  background: #f2f2f2;
+  border-radius: 5px;
+  width: 100px;
+  margin-bottom: 2px;
+  margin-top: 5px;
+  float: left;
+  margin-right: 10px;
+}
+.dark-theme input[type="color"] {
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.dark-theme input[type="color"]:focus {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.dark-theme input[type="color"] {
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+  }
+ .dark-theme input[type="color"] {
+      -webkit-appearance: none;
+      border: none;
+      width: 32px;
+      height: 32px;
+      background: transparent;
+      padding: 0;
+      margin: 0;
+      cursor: pointer;
+      border-radius: 50px;
+    }
+  .dark-theme input[type="color"]::-webkit-color-swatch-wrapper {
+      padding: 0;
+      border:none;
+      border-radius: 50px;
+  }
+ .dark-theme input[type="color"]::-webkit-color-swatch {
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0px 1px 5px 1px #eee;
+  }
+ .dark-theme input[type="color"]::-moz-color-swatch {
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0px 1px 5px 1px #eee;
+    }
+    .dark-theme .color-settings label {
+  border-bottom: 1px solid #f7f7f7;
+  margin-bottom: 10px;
+  width: 100%;
+  padding-bottom: 5px;
+}
+.dark-theme #reset-button {
+  background: #595959;
+  padding: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+  border-radius: 20px;
+  color: white;
+  display: block;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.dark-theme #save-button {
+  background: #79c844;
+  padding: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+  border-radius: 20px;
+  color: white;
+  display: block;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.dark-theme .toggle-button-cover {
+  display: grid;
+  position: relative;
+  width: 400px;
+  height: 100px;
+  box-sizing: border-box;
+  border-top: 1px solid #fafafa;
+}
+
+.dark-theme .button-cover {
+  height: 60px;
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  width: 200px;
+}
+.dark-theme .button-cover:before
+{
+    counter-increment: button-counter;
+    content: counter(button-counter);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #d7e3e3;
+    font-size: 12px;
+    line-height: 1;
+    padding: 5px;
+}
+
+.dark-theme .button-cover, .knobs, .layer
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.dark-theme .button {
+  position: relative;
+  top: -7px;
+  width: 74px;
+  height: 36px;
+  margin: -20px auto 0 auto;
+  overflow: hidden;
+  left: 110px;
+}
+
+.dark-theme .button.r, .button.r .layer
+{
+    border-radius: 100px;
+}
+.dark-theme #button-3 .checkbox {
+  position: relative;
+  width: 100% !important;
+  height: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  opacity: 0 !important;
+  cursor: pointer !important;
+  z-index: 3;
+}
+
+.dark-theme .knobs
+{
+    z-index: 2;
+}
+
+.dark-theme .layer {
+  width: 100%;
+  background-color: #f2f2f2;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+/* Button 3 */
+.dark-theme #button-3 .knobs::before {
+  content: 'NO';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 20px;
+  height: 10px;
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+  padding: 9px 4px;
+  background-color: #595959;
+  border-radius: 50%;
+  transition: 0.3s ease all, left 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15);
+}
+
+.dark-theme #button-3 .checkbox:active + .knobs:before
+{
+    width: 46px;
+    border-radius: 100px;
+}
+
+.dark-theme #button-3 .checkbox:checked:active + .knobs:before
+{
+    margin-left: -26px;
+}
+
+.dark-theme #button-3 .checkbox:checked + .knobs::before {
+  content: 'YES';
+  left: 42px;
+  background-color: #79C844;
+}
+
+.dark-theme #button-3 .checkbox:checked ~ .layer {
+  background-color: #edfceb;
+}
+.dark-theme h3 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f9f9f9;
+  margin-bottom: 20px;
+}
 `);
 
 $('head').append(`
@@ -933,12 +1365,12 @@ $('body').prepend(`
             <option value="custom">Custom Theme</option>
         </select>
         <button class="gear-button" id="gear-button">&#x2699;</button>
-        
+
     </div>
     <!-- SETTINGS MENU -->
         <div id="settings-menu" class="settings-menu" style="display: none;">
         <!-- A NOTICE EXPLAINING THAT SETTINGS MAY BE LOST IF THEY CHANGE THE THEME AND RELOAD THE PAGE -->
-        <p>Changing the theme will reset your settings. Please save your color settings on a note before changing the theme.</p>
+        <h2>Changing the theme will reset your settings. Please save your color settings on a note before changing the theme.</h2>
 
             <h3>Settings</h3>
             <div class="color-settings">
@@ -946,6 +1378,7 @@ $('body').prepend(`
                 <label for="primary-color">Primary Color:</label>
                 <input type="text" id="primary-color-code" name="primary-color-code" value="#AACCDD">
                 <input type="color" id="primary-color" name="primary-color" value="#AACCDD">
+
                 <br>
                 </div>
                 <div class="color-settings">
@@ -963,22 +1396,30 @@ $('body').prepend(`
                 <br>
                 </div>
                 <div class="color-settings">
-                <!-- USER BUBBLE BACKGROUND COLOR -->
-                <label for="user-bubble-bg-color">User Bubble Background Color:</label>
+                <!-- USER BUBBLE -->
+                <label for="user-bubble-bg-color">User Bubble:</label>
                 <input type="text" id="user-bubble-bg-color-code" name="user-bubble-bg-color-code" value="#ffffff">
                 <input type="color" id="user-bubble-bg-color" name="user-bubble-bg-color" value="#ffffff">
                 <br>
                 </div>
                 <div class="color-settings">
+                <!-- USER BUBBLE TEXT -->
+                <label for="user-bubble-text-color">User Bubble Text:</label>
+                <input type="text" id="user-bubble-text-color-code" name="user-bubble-text-color-code" value="#000000">
+                <input type="color" id="user-bubble-text-color" name="user-bubble-text-color" value="#000000">
+                <br>
+                </div>
+
+                <div class="color-settings">
                 <!-- SECONDARY BACKGROUND COLOR -->
-<label for="secondary-bg-color">Secondary Background Color:</label>
+<label for="secondary-bg-color">Secondary Background:</label>
 <input type="text" id="secondary-bg-color-code" name="secondary-bg-color-code" value="#ffffff">
 <input type="color" id="secondary-bg-color" name="secondary-bg-color" value="#ffffff">
 <br>
 </div>
 <div class="color-settings">
 <!-- CHAT BACKGROUND COLOR -->
-<label for="chat-bg-color">Chat Background Color:</label>
+<label for="chat-bg-color">Chat Background:</label>
 <input type="text" id="chat-bg-color-code" name="chat-bg-color-code" value="#ffffff">
 <input type="color" id="chat-bg-color" name="chat-bg-color" value="#ffffff">
 <br>
@@ -992,14 +1433,14 @@ $('body').prepend(`
                 </div>
                 <div class="color-settings">
                 <!-- SIDEBAR BACKGROUND COLOR -->
-            <label for="sidebar-bg-color">Sidebar Background Color:</label>
+            <label for="sidebar-bg-color">Sidebar Background:</label>
             <input type="text" id="sidebar-bg-color-code" name="sidebar-bg-color-code" value="#ffffff">
             <input type="color" id="sidebar-bg-color" name="sidebar-bg-color" value="#ffffff">
             <br>
             </div>
             <div class="color-settings">
             <!-- DROPDOWN BACKGROUND COLOR -->
-            <label for="dropdown-bg-color">Dropdown Background Color:</label>
+            <label for="dropdown-bg-color">Dropdown Background:</label>
             <input type="text" id="dropdown-bg-color-code" name="dropdown-bg-color-code" value="#ffffff">
             <input type="color" id="dropdown-bg-color" name="dropdown-bg-color" value="#ffffff">
             <br>
@@ -1017,8 +1458,17 @@ $('body').prepend(`
             <!-- RESET BUTTON -->
             <button id="reset-button">Reset</button>
             <br>
-            <label for="no-distraction-mode">No Distraction Mode:</label>
-            <input type="checkbox" id="no-distraction-mode" name="no-distraction-mode">
+
+            <div class="toggle-button-cover">
+      <div class="button-cover">
+                  <label for="no-distraction-mode">No Distraction Mode:</label>
+        <div class="button r" id="button-3">
+          <input type="checkbox" id="no-distraction-mode" name="no-distraction-mode" class="checkbox">
+          <div class="knobs"></div>
+          <div class="layer"></div>
+        </div>
+      </div>
+    </div>
         </div>
 `);
 
@@ -1042,6 +1492,7 @@ const themes = {
         sidebarBackgroundColor: '#000000',
         dropdownBackgroundColor: '#ffffff',
         userBubbleBackgroundColor: '#000000',
+        userBubbleTextColor: '#ffffff',
         labelColor: '#000000',
 
     },
@@ -1053,6 +1504,7 @@ const themes = {
         dropdownBackgroundColor: '#333333',
         labelColor: '#ffffff',
         userBubbleBackgroundColor: '#ffffff',
+        userBubbleTextColor: '#000000',
         primaryColor: '#ffffff',
         secondaryColor: '#ffffff',
         extraColor: '#ffffff',
@@ -1069,6 +1521,7 @@ const themes = {
         dropdownBackgroundColor: '#ffffff',
         labelColor: '#000000',
         userBubbleBackgroundColor: '#000000',
+        userBubbleTextColor: '#ffffff',
 
     },
 };
@@ -1078,12 +1531,14 @@ function updateCustomThemeColors() {
         primaryColor: $('#primary-color-code').val(),
         secondaryColor: $('#secondary-color-code').val(),
         extraColor: $('#extra-color-code').val(),
-        sidebarBackgroundColor: $('#sidebar-background-color-code').val(),
-        dropdownBackgroundColor: $('#dropdown-background-color-code').val(),
+        sidebarBackgroundColor: $('#sidebar-bg-color-code').val(),
+        dropdownBackgroundColor: $('#dropdown-bg-color-code').val(),
         labelColor: $('#label-color-code').val(),
         textColor: $('#text-color-code').val(),
         chatBackgroundColor: $('#chat-bg-color-code').val(),
         secondaryBackgroundColor: $('#secondary-bg-color-code').val(),
+        userBubbleBackgroundColor: $('#user-bubble-bg-color-code').val(),
+        userBubbleTextColor: $('#user-bubble-text-color-code').val(),
     };
 
     themes.custom = { ...themes.custom, ...customColors };
@@ -1100,12 +1555,14 @@ function applyTheme(themeName) {
       themes.custom.primaryColor = customColors.primaryColor;
       themes.custom.secondaryColor = customColors.secondaryColor;
       themes.custom.extraColor = customColors.extraColor;
-        themes.custom.sidebarBackgroundColor = customColors.sidebarBackgroundColor;
-        themes.custom.dropdownBackgroundColor = customColors.dropdownBackgroundColor;
-        themes.custom.labelColor = customColors.labelColor;
+      themes.custom.sidebarBackgroundColor = customColors.sidebarBackgroundColor;
+      themes.custom.dropdownBackgroundColor = customColors.dropdownBackgroundColor;
+      themes.custom.labelColor = customColors.labelColor;
       themes.custom.textColor = customColors.textColor;
       themes.custom.chatBackgroundColor = customColors.chatBackgroundColor;
       themes.custom.secondaryBackgroundColor = customColors.secondaryBackgroundColor;
+      themes.custom.userBubbleBackgroundColor = customColors.userBubbleBackgroundColor;
+      themes.custom.userBubbleTextColor = customColors.userBubbleTextColor;
       updateCustomThemeCSS();
     }
   }
@@ -1136,9 +1593,11 @@ function updateCustomThemeCSS() {
     const secondaryBackgroundColor = themes.custom.secondaryBackgroundColor;
     const chatBackgroundColor = themes.custom.chatBackgroundColor;
     const textColor = themes.custom.textColor;
+    const userBubbleBackgroundColor = themes.custom.userBubbleBackgroundColor;
+    const userBubbleTextColor = themes.custom.userBubbleTextColor;
     const css = `
     .sidebar_box_container {
-        background: ${secondaryBackgroundColor};
+        background: ${sidebarBackgroundColor};
       }
           .sc-1cnyl8h-1.ewyzon.StyledButton-sc-qe3ace-0.fEEkvG {
         background: ${primaryColor};
@@ -1154,9 +1613,13 @@ function updateCustomThemeCSS() {
       .xw24e-0.hURzKX {
         color: ${textColor};
       }
+      .kiLfEN {
+        background-color: ${sidebarBackgroundColor} !important;
+
+      }
       .kqHPFE {
-        background: ${chatBackgroundColor} !important;
-        border: 1px solid ${chatBackgroundColor} !important;
+        background: ${dropdownBackgroundColor} !important;
+        border: 1px solid ${dropdownBackgroundColor} !important;
         border-radius: 5px;
         color: ${textColor} !important;
       }
@@ -1551,34 +2014,242 @@ function updateCustomThemeCSS() {
           border: none;
           cursor: pointer;
       }
-      .settings-menu {
-        border: 1px solid rgb(216, 220, 222);
-        border-radius: 4px;
-        padding: 50px;
-        background-color: white;
-        color: rgb(47, 57, 65);
-        font-family: inherit;
-        font-size: 14px;
-        line-height: 1.28571;
-        box-sizing: border-box;
-        position: relative;
-        left: 0;
-        width: 40%;
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
-        z-index: 9999;
-        display: flow-root;
-        margin: 0 auto;
-        right: 0;
-        top: 30%;
-        font-size: 16px;
-        line-height: 3;
-      }
+.settings-menu {
+  border: 1px solid rgb(216, 220, 222);
+  padding: 50px;
+  color: rgb(47, 57, 65);
+  box-sizing: border-box;
+  position: relative;
+  left: 0;
+  width: 70%;
+  z-index: 9999;
+  margin: 0 auto;
+  right: 0;
+  top: 555px;
+  font-size: 16px;
+  background-color: white;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.05), 0 5px 15px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+}
       .lzuyri-0.coYhhN {
         background: white !important;
       }
       .sc-1bfb6j4-0.jIQIHh {
         width: 200px;
       }
+      .color-settings {
+  width: 170px;
+  float: left;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.05), 0 5px 15px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+  height: 90px;
+  padding-left: 20px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  padding-right: 20px;
+}
+#primary-color-code, #secondary-color-code, #extra-color-code, #secondary-color-code, #user-bubble-bg-color-code, #secondary-bg-color-code, #chat-bg-color-code, #text-color-code, #sidebar-bg-color-code, #dropdown-bg-color-code, #label-color-code, #user-bubble-text-color-code {
+  border: 1px solid #f2f2f2;
+  background: #f2f2f2;
+  border-radius: 5px;
+  width: 100px;
+  margin-bottom: 2px;
+  margin-top: 5px;
+  float: left;
+  margin-right: 10px;
+}
+input[type="color"] {
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+input[type="color"] {
+    -webkit-appearance: none;
+    border: none;
+    width: 32px;
+    height: 32px;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    border-radius: 50px;
+  }
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+    border:none;
+    border-radius: 50px;
+}
+input[type="color"]::-webkit-color-swatch {
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0px 1px 5px 1px #eee;
+}
+input[type="color"]::-moz-color-swatch {
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0px 1px 5px 1px #eee;
+}
+  .color-settings label {
+  border-bottom: 1px solid #f7f7f7;
+  margin-bottom: 10px;
+  width: 100%;
+  padding-bottom: 5px;
+}
+#reset-button {
+  background: #595959;
+  padding: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+  border-radius: 20px;
+  color: white;
+  display: block;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+#save-button {
+  background: #79c844;
+  padding: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+  border-radius: 20px;
+  color: white;
+  display: block;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.button-cover:before
+{
+    counter-increment: button-counter;
+    content: counter(button-counter);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #d7e3e3;
+    font-size: 12px;
+    line-height: 1;
+    padding: 5px;
+}
+
+.button-cover, .knobs, .layer
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.button {
+  position: relative;
+  top: -7px;
+  width: 74px;
+  height: 36px;
+  margin: -20px auto 0 auto;
+  overflow: hidden;
+  left: 110px;
+}
+
+.button.r, .button.r .layer
+{
+    border-radius: 100px;
+}
+.knobs
+{
+    z-index: 2;
+}
+
+.layer {
+  width: 100%;
+  background-color: #f2f2f2;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+/* Button 3 */
+#button-3 .knobs::before {
+  content: 'NO';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 20px;
+  height: 10px;
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+  padding: 9px 4px;
+  background-color: #595959;
+  border-radius: 50%;
+  transition: 0.3s ease all, left 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15);
+}
+
+#button-3 .checkbox:active + .knobs:before
+{
+    width: 46px;
+    border-radius: 100px;
+}
+
+#button-3 .checkbox:checked:active + .knobs:before
+{
+    margin-left: -26px;
+}
+
+#button-3 .checkbox:checked + .knobs::before {
+  content: 'YES';
+  left: 42px;
+  background-color: #79C844;
+}
+
+#button-3 .checkbox:checked ~ .layer {
+  background-color: #edfceb;
+}
+#button-3 .checkbox {
+  position: relative;
+  width: 100% !important;
+  height: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  opacity: 0 !important;
+  cursor: pointer !important;
+  z-index: 3;
+}
+.toggle-button-cover {
+  display: grid;
+  position: relative;
+  width: 400px;
+  height: 100px;
+  box-sizing: border-box;
+  border-top: 1px solid #fafafa;
+}
+.button-cover {
+  height: 60px;
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  width: 200px;
+}
+h3 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f9f9f9;
+  margin-bottom: 20px;
+}
+.chat-USER {
+    background: ${userBubbleBackgroundColor} !important;
+
+  }
     `;
 
     $('#custom-theme-styles').html(css);
@@ -1658,6 +2329,7 @@ function loadSettings() {
             $('#dropdown-bg-color-code').val(customColors.dropdownBackgroundColor);
             $('#label-color-code').val(customColors.labelColor);
             $('#user-bubble-bg-color-code').val(customColors.userBubbleBackgroundColor);
+            $('#user-bubble-text-color-code').val(customColors.userBubbleTextColor);
             $('#chat-bg-color-code').val(customColors.chatBackgroundColor);
 
             $('#primary-color').val(customColors.primaryColor);
@@ -1667,6 +2339,7 @@ function loadSettings() {
             $('#dropdown-bg-color').val(customColors.dropdownBackgroundColor);
             $('#label-color').val(customColors.labelColor);
             $('#user-bubble-bg-color').val(customColors.userBubbleBackgroundColor);
+            $('#user-bubble-text-color').val(customColors.userBubbleTextColor);
             $('#text-color').val(customColors.textColor);
             $('#secondary-bg-color').val(customColors.secondaryBackgroundColor);
             $('#chat-bg-color').val(customColors.chatBackgroundColor);
@@ -1708,10 +2381,11 @@ function saveSettings() {
             primaryColor: $('#primary-color-code').val(),
             secondaryColor: $('#secondary-color-code').val(),
             extraColor: $('#extra-color-code').val(),
-            sidebarBackgroundColor: $('#sidebar-background-color-code').val(),
-            dropdownBackgroundColor: $('#dropdown-background-color-code').val(),
+            sidebarBackgroundColor: $('#sidebar-bg-color-code').val(),
+            dropdownBackgroundColor: $('#dropdown-bg-color-code').val(),
             labelColor: $('#label-color-code').val(),
             userBubbleBackgroundColor: $('#user-bubble-bg-color-code').val(),
+            userBubbleTextColor: $('#user-bubble-text-color-code').val(),
             textColor: $('#text-color-code').val(),
             chatBackgroundColor: $('#chat-bg-color-code').val(),
             secondaryBackgroundColor: $('#secondary-bg-color-code').val(),
@@ -1741,6 +2415,7 @@ $('#reset-button').on('click', function() {
     $('#text-color-code').val('#78a300');
     $('#secondary-bg-color-code').val('#78a300');
     $('#chat-bg-color-code').val('#78a300');
+    $('#user-bubble-text-color-code').val('#78a300');
 
     $('#primary-color').val('#78a300');
     $('#secondary-color').val('#78a300');
@@ -1752,9 +2427,21 @@ $('#reset-button').on('click', function() {
     $('#text-color').val('#78a300');
     $('#secondary-bg-color').val('#78a300');
     $('#chat-bg-color').val('#78a300');
+    $('#user-bubble-text-color').val('#78a300');
 });
 
 // === Save settings when changes are made ====================================
+$('#user-bubble-text-color').on('input', function() {
+    $('#user-bubble-text-color-code').val($(this).val());
+    updateCustomThemeColors();
+    saveSettings();
+});
+$('#user-bubble-text-color-code').on('input', function() {
+    $('#user-bubble-text-color').val($(this).val());
+    updateCustomThemeColors();
+    saveSettings();
+});
+
 $('#user-bubble-bg-color').on('input', function() {
     $('#user-bubble-bg-color-code').val($(this).val());
     updateCustomThemeColors();
@@ -1874,6 +2561,7 @@ $('#save-button').on('click', function() {
     themes.custom.textColor = $('#text-color').val();
     themes.custom.dropdownBackgroundColor = $('#dropdown-bg-color').val();
     themes.custom.userBubbleBackgroundColor = $('#user-bubble-bg-color').val();
+    themes.custom.userBubbleTextColor = $('#user-bubble-text-color').val();
     themes.custom.chatBackgroundColor = $('#chat-bg-color').val();
     themes.custom.secondaryBackgroundColor = $('#secondary-bg-color').val();
     updateCustomThemeColors();
@@ -1922,3 +2610,4 @@ updateCustomThemeColors();
     setThemeFromLocalStorage();
 });
     });
+
